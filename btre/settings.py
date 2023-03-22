@@ -158,11 +158,11 @@ MESSAGE_TAGS ={
 #Email Config
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.outlook.com'
-EMAIL_HOST_USER = 'django.emlak@outlook.com'
-EMAIL_HOST_PASSWORD = 'Djangoproject35'
+EMAIL_HOST_USER = 'django.emlak@outlook.com' #your email
+EMAIL_HOST_PASSWORD = '*********' #your password not mine :)
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'django.emlak@outlook.com'
+DEFAULT_FROM_EMAIL = 'django.emlak@outlook.com' #your email
 
 
 try:
