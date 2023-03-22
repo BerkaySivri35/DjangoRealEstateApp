@@ -164,4 +164,8 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'django.emlak@outlook.com'
 
-#'pass: Djangoproject35'
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
