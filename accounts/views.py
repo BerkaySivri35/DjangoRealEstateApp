@@ -6,32 +6,7 @@ from django.contrib.auth.decorators import login_required
 from contacts.models import Contact
 
 # Create your views here.
-# def user_login(request):
-#     if request.method == 'POST':
-#         form = LoginUserForm(request, data = request.POST)
 
-#         if form.is_valid():
-#             username = form.cleaned_data.get('username')
-#             password = form.cleaned_data.get('password')
-
-#             #Match with user
-#             user = authenticate(request, username = username, password = password)
-
-#             #user is available?
-#             if user is not None:
-#                 login(request,user)
-#                 messages.add_message(request, messages.SUCCESS, 'Giriş Başarılı')
-            
-#             else:
-#                 return render(request,"accounts/login.html", {"form":form})
-#         else:
-#             return render(request,"accounts/login.html", {"form":form})
-#     else:   
-#             form = LoginUserForm()
-#             return render(request,"accounts/login.html", {"form":form})
-
-
-#     return render(request, 'accounts/login.html')
 def user_login(request):
     if request.user.is_authenticated and "next" in request.GET:
         return render(request, "accounts/login.html", messages.add_message(request, messages.ERROR, "Yetkiniz YOK!"))
