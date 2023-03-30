@@ -1,5 +1,5 @@
 # DjangoRealEstateApp
-<h2>Django Real Estate Project</h2>
+
 <h1>Live link: http://djangoemlakbyberkaysvr.site/</h1>
 
 ![ss2](https://user-images.githubusercontent.com/72870590/228870360-bbfdacfd-74f6-4b5a-8dfe-a67cdede563b.jpg)
